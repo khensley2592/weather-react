@@ -57,7 +57,7 @@ function App() {
       </div>
       <p>
         <a
-          href="https://github.com/Wantsnewpaint/React-Weather-App"
+          href="https://github.com/khensley2592/weather-react"
           target="_blank"
           rel="noreferrer"
         >
