@@ -9,17 +9,11 @@ function App() {
             <div class="row justify-content-center">
               <div class="col-4">
                 <h1>City</h1>
-                <h2 class="date"></h2>
+                <h2 class="date">Monday, June 21</h2>
                 <div id="current"></div>
                 <span class="temp" id="temperature"></span>
                 <span class="units">
-                  <a href="#" id="celsius-link" class="active">
-                    °C
-                  </a>{" "}
-                  |
-                  <a href="#" id="fahrenheit-link">
-                    °F
-                  </a>
+                  <span>°C</span> |<span>°F</span>
                 </span>
                 <div>
                   <img src="" alt="Clear" id="icon" />
@@ -55,13 +49,13 @@ function App() {
           </div>
         </div>
       </div>
-      <p>
+      <p class="text-center">
         <a
           href="https://github.com/khensley2592/weather-react"
           target="_blank"
           rel="noreferrer"
         >
-          Open-source code
+          Open-source code&nbsp;
         </a>
         by Katie Hensley
       </p>
