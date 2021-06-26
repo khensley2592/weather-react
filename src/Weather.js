@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
 import "./Weather.css";
+import FormattedDate from "./FormattedDate";
 import { loadPartialConfig } from "@babel/core";
 
 export default function App(props) {
@@ -11,7 +12,7 @@ export default function App(props) {
       ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
-      date: "Wednesday 07:00",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
       wind: response.data.wind.speed,
@@ -26,7 +27,9 @@ export default function App(props) {
           <div className="row justify-content-center">
             <div className="col-4">
               <h1>{weatherData.city}</h1>
-              <h2 className="date">{weatherData.date}</h2>
+              <h2 className="date">
+                <FormattedDate date={weatherData.date} />
+              </h2>
               <div className="text-capitalize" id="current">
                 {weatherData.description}
               </div>
