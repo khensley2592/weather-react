@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Weather from "./Weather";
-import { loadPartialConfig } from "@babel/core";
 
 export default function App() {
   return (
