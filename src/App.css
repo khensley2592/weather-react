@@ -22,11 +22,6 @@ form {
   font-weight: bold;
   padding: 10px 0 0 0;
 }
-.forecast {
-  font-size: 25px;
-  padding: 35px 0 25px 0;
-  text-align: left;
-}
 .justify-content-center {
   max-width: 600px;
   margin: 30px auto 0px auto;
